@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Subtle Animations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/lib/subtle.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="hero-full">
+    <div class="hero">
+        <div>
+            <h1 class="hero-title slower" appear-in>Subtle.css</h1>
+            <h3 class="hero-desc">A Lightweight CSS Animation Library</h3>
+            <br>
+            <div class="flex flex-center"><button onclick="scroller('about')" class="btn-primary">Learn More</button>
+            </div>
+            <!-- <div class="feature">
+                <span class="fas fa-feather flex flex-center"></span>
+                <span class="fas fa-bolt flex flex-center"></span>
+                <span class="fas fa-bezier-curve flex flex-center"></span>
+                <span class="fas fa-desktop flex flex-center"></span>
+
+            </div> -->
+        </div>
+
+    </div>
+    
+    <div class="cdn-input flex flex-center">
+            <div class="cdn">
+             https://github.com/ferrousdesigner/subtle.css/lib/subtle.css
+            </div>
+            <button onclick="copy(event)">Copy</button>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="center">Animation Classes</h1>
+        <div class="dots center"></div>
+        <div class="displayer">
+            <span class="duration-changer"><h2>Speed</h2>
+                <div>
+                    <button class="active" onclick="changeDuration(event, 'actual')">
+                        Default
+                    </button>
+                    <button onclick="changeDuration(event,'slower')">Slower</button>
+                    <button onclick="changeDuration(event,'slowest')">Slowest</button>
+                </div>
+            </span>
+            <div class="single">
+                    <button onclick="reload(event)">&#8635;</button>
+                    <span><p>haptic</p><button onclick="copy(event)">Copy this class</button></span><div class="haptic"></div>
+            </div>
+            <div class="single">
+                    <button onclick="reload(event)">&#8635;</button>
+                    <span><p>haptic-right</p><button onclick="copy(event)">Copy this class</button></span><div class="haptic-right"></div>
+            </div>
+            <div class="single">
+                    <button onclick="reload(event)">&#8635;</button>
+                    <span><p>haptic-left</p><button onclick="copy(event)">Copy this class</button></span><div class="haptic-left"></div>
+            </div>
+            <div class="single">
+                    <button onclick="reload(event)">&#8635;</button>
+                    <span><p>haptic-top</p><button onclick="copy(event)">Copy this class</button></span><div class="haptic-top"></div>
+            </div>
+            <div class="single">
+                    <button onclick="reload(event)">&#8635;</button>
+                    <span><p>haptic-bottom</p><button onclick="copy(event)">Copy this class</button></span><div class="haptic-bottom"></div>
+            </div>
+            <div class="single">
+                <button onclick="reload(event)">&#8635;</button>
+                <span>
+                    <p>appear</p>
+                    <button onclick="copy(event)">Copy this class</button>
+                </span>
+                <div class="appear"></div>
+            </div>
+            <div class="single">
+                <button onclick="reload(event)">&#8635;</button>
+                <span><p>appear-in</p><button onclick="copy(event)">Copy this class</button></span><div class=" appear-in"></div></div>
+            <div class="single">
+                <button onclick="reload(event)">&#8635;</button>
+                <span><p>appear-out</p><button onclick="copy(event)">Copy this class</button></span><div class="appear-out"></div>
+            </div>
+            <div class="single">
+                <button onclick="reload(event)">&#8635;</button>
+                <span><p>appear-in-right</p><button onclick="copy(event)">Copy this class</button></span><div class="appear-in-right"></div>
+            </div>
+            <div class="single">
+                    <button onclick="reload(event)">&#8635;</button>
+                    <span><p>appear-out-right</p><button onclick="copy(event)">Copy this class</button></span><div class="appear-out-right"></div>
+                </div>
+            <div class="single">
+                <button onclick="reload(event)">&#8635;</button>
+                <span><p>appear-in-left</p><button onclick="copy(event)">Copy this class</button></span><div class="appear-in-left"></div>
+            </div>
+            <div class="single">
+                    <button onclick="reload(event)">&#8635;</button>
+                    <span><p>appear-out-left</p><button onclick="copy(event)">Copy this class</button></span><div class="appear-out-left"></div>
+                </div>
+            <div class="single">
+                    <button onclick="reload(event)">&#8635;</button>
+                    <span><p>appear-in-top</p><button onclick="copy(event)">Copy this class</button></span><div class="appear-in-top"></div>
+            </div>
+            <div class="single">
+                    <button onclick="reload(event)">&#8635;</button>
+                    <span><p>appear-out-top</p><button onclick="copy(event)">Copy this class</button></span><div class="appear-out-top"></div>
+            </div>
+            <div class="single">
+                    <button onclick="reload(event)">&#8635;</button>
+                    <span><p>appear-in-bottom</p><button onclick="copy(event)">Copy this class</button></span><div class="appear-in-bottom"></div>
+            </div>
+            <div class="single">
+                    <button onclick="reload(event)">&#8635;</button>
+                    <span><p>appear-out-bottom</p><button onclick="copy(event)">Copy this class</button></span><div class="appear-out-bottom"></div>
+            </div>
+            <div class="single">
+                    <button onclick="reload(event)">&#8635;</button>
+                    <span><p>move-in</p><button onclick="copy(event)">Copy this class</button></span><div class="move-in"></div>
+            </div>
+            <div class="single">
+                    <button onclick="reload(event)">&#8635;</button>
+                    <span><p>move-out</p><button onclick="copy(event)">Copy this class</button></span><div class="move-out"></div>
+            </div>
+            <div class="single">
+                    <button onclick="reload(event)">&#8635;</button>
+                    <span><p>move-in-right</p><button onclick="copy(event)">Copy this class</button></span><div class="move-in-right"></div>
+            </div>
+            <div class="single">
+                    <button onclick="reload(event)">&#8635;</button>
+                    <span><p>move-out-right</p><button onclick="copy(event)">Copy this class</button></span><div class="move-out-right"></div>
+            </div>
+            <div class="single">
+                    <button onclick="reload(event)">&#8635;</button>
+                    <span><p>move-in-left</p><button onclick="copy(event)">Copy this class</button></span><div class="move-in-left"></div>
+            </div>
+            <div class="single">
+                    <button onclick="reload(event)">&#8635;</button>
+                    <span><p>move-out-left</p><button onclick="copy(event)">Copy this class</button></span><div class="move-out-left"></div>
+            </div>
+            <div class="single">
+                    <button onclick="reload(event)">&#8635;</button>
+                    <span><p>move-in-top</p><button onclick="copy(event)">Copy this class</button></span><div class="move-in-top"></div>
+            </div>
+            <div class="single">
+                    <button onclick="reload(event)">&#8635;</button>
+                    <span><p>move-out-top</p><button onclick="copy(event)">Copy this class</button></span><div class="move-out-top"></div>
+            </div>
+            <div class="single">
+                    <button onclick="reload(event)">&#8635;</button>
+                    <span><p>move-in-bottom</p><button onclick="copy(event)">Copy this class</button></span><div class="move-in-bottom"></div>
+            </div>
+            <div class="single">
+                    <button onclick="reload(event)">&#8635;</button>
+                    <span><p>move-out-bottom</p><button onclick="copy(event)">Copy this class</button></span><div class="move-out-bottom"></div>
+            </div>
+        </div>
+        <div id='about'>
+            <h1>About</h1>
+            <p class="desc">Subtle.css is a lightweight css library created to provide a range of subtle & smooth animations in which the timing function is based upon a quintic bezier-curve.</p>
+            <br>
+            <h2>Author</h2>
+            <div class="card">
+                <div class="avatar"></div>
+                <div class="name">Faraz Khan</div>
+                <div class="small-line"></div>
+                <p class="bio">Hi, I'm a frontend engineer with a focus on product design, user experience and design aesthetics. </p>
+                <div class="name">Traits</div>
+                <div class="skills">
+                    <span class="fab fa-react"></span>
+                    <span class="fab fa-js"></span>
+                    <span class="fab fa-css3"></span>
+                    <span class="fab fa-html5"></span>
+
+                </div>
+                <button class="btn-primary cta">Say Hi</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <a href='http://thefarazkhan.in'><span class="fas fa-paint-brush"></span></a>
+    </div>
+</body>
+</html>

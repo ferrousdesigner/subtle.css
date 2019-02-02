@@ -1,0 +1,374 @@
+.appear, [appear] {
+    animation: appear 0.35s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.appear-in, [appear-in] {
+    animation: appear-in 0.35s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+@keyframes appear-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.appear-out, [appear-out] {
+    animation: appear-out 0.35s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+@keyframes appear-out {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}
+.appear-in-right {
+    animation: appear-in-right 0.35s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+@keyframes appear-in-right {
+    from {
+        transform: translateX(20%) rotate(2deg);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0) rotate(0deg);
+        opacity: 1;
+    }
+}
+.appear-out-right {
+    animation: appear-out-right 0.35s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+@keyframes appear-out-right {
+    to {
+        transform: translateX(20%) rotate(2deg);
+        opacity: 0;
+    }
+    from {
+        transform: translateX(0) rotate(0deg);
+        opacity: 1;
+    }
+}
+.appear-in-left {
+    animation: appear-in-left 0.35s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+@keyframes appear-in-left {
+    from {
+        transform: translateX(-20%) rotate(-2deg);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0) rotate(0deg);
+        opacity: 1;
+    }
+}
+.appear-out-left {
+    animation: appear-out-left 0.35s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+@keyframes appear-out-left {
+    to {
+        transform: translateX(-20%) rotate(-2deg);
+        opacity: 0;
+    }
+    from {
+        transform: translateX(0) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+.appear-in-top {
+    animation: appear-in-top 0.35s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+@keyframes appear-in-top {
+    from {
+        transform: translateY(-20%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.appear-out-top {
+    animation: appear-out-top 0.35s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+@keyframes appear-out-top {
+    to {
+        transform: translateY(-20%);
+        opacity: 0;
+    }
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.appear-in-bottom {
+    animation: appear-in-bottom 0.35s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+@keyframes appear-in-bottom {
+    from {
+        transform: translateY(20%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.appear-out-bottom {
+    animation: appear-out-bottom 0.35s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+@keyframes appear-out-bottom {
+    to {
+        transform: translateY(20%);
+        opacity: 0;
+    }
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.move-in {
+    animation: move-in 0.35s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes move-in {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.move-out {
+    animation: move-out 0.35s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes move-out {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+.move-in-left {
+    animation: move-in-left 0.35s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes move-in-left {
+    0% {
+        transform: scale(0.9) translateX(-600px);
+    }
+    100% {
+        transform: scale(1) translateX(0);
+    }
+}
+
+.move-in-right {
+    animation: move-in-right 0.35s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes move-in-right {
+    0% {
+        transform: scale(0.9) translateX(600px);
+    }
+    100% {
+        transform: scale(1) translateX(0deg);
+    }
+}
+.move-out-right {
+    animation: move-out-right 0.35s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes move-out-right {
+    100% {
+        transform: scale(0.9) translateX(600px);
+    }
+    0% {
+        transform: scale(1) translateX(0);
+    }
+}
+
+.move-out-left {
+    animation: move-out-left 0.35s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes move-out-left {
+    100% {
+        transform: scale(0.9) translateX(-600px);
+    }
+    0% {
+        transform: scale(1) translateX(0);
+    }
+}
+.move-in-top {
+    animation: move-in-top 0.35s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes move-in-top {
+    0% {
+        transform: scale(0.9) translateY(-600px);
+    }
+    100% {
+        transform: scale(1) translateY(0);
+    }
+}
+.move-out-top {
+    animation: move-out-top 0.35s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes move-out-top {
+    100% {
+        transform: scale(0.9) translateY(-600px);
+    }
+    0% {
+        transform: scale(1) translateY(0);
+    }
+}
+.move-in-bottom {
+    animation: move-in-bottom 0.35s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes move-in-bottom {
+    0% {
+        transform: scale(0.9) translateY(600px);
+    }
+    100% {
+        transform: scale(1) translateY(0);
+    }
+}
+.move-in-bottom {
+    animation: move-in-bottom 0.35s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes move-in-bottom {
+    0% {
+        transform: scale(0.9) translateY(600px);
+    }
+    100% {
+        transform: scale(1) translateY(0);
+    }
+}
+.move-out-bottom {
+    animation: move-out-bottom 0.35s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes move-out-bottom {
+    100% {
+        transform: scale(0.9) translateY(600px);
+    }
+    0% {
+        transform: scale(1) translateY(0);
+    }
+}
+
+.haptic {
+    animation: haptic 0.35s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes haptic {
+    0% {
+        transform: scale(1);
+    }
+    10%{
+        transform: scale(0.95);
+    }
+    0% {
+        transform: scale(1);
+    }
+}
+.haptic-right {
+    animation: haptic-right 0.35s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    transform-origin: left right;
+}
+
+@keyframes haptic-right {
+    0% {
+        transform: perspective(400px) rotateY(0deg);
+    }
+    10%{
+        transform: perspective(400px) rotateY(10deg);
+    }
+    0% {
+        transform: perspective(400px) rotateY(0deg);
+    }
+}
+.haptic-left {
+    animation: haptic-left 0.35s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    transform-origin: right left;
+    transform-style: preserve-3d;
+ }
+
+@keyframes haptic-left {
+    0% {
+        transform: perspective(400px) rotateY(0deg);
+    }
+    10%{
+        transform: perspective(400px) rotateY(-10deg);
+    }
+    0% {
+        transform: perspective(400px) rotateY(0deg);
+    }
+}
+
+
+.haptic-top {
+    animation: haptic-top 0.35s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    transform-origin: bottom top;
+ }
+
+@keyframes haptic-top {
+    0% {
+        transform: perspective(400px) rotateX(0deg);
+    }
+    10%{
+        transform: perspective(400px) rotateX(10deg);
+    }
+    0% {
+        transform: perspective(400px) rotateX(0deg);
+    }
+}
+
+.haptic-bottom {
+    animation: haptic-bottom 0.35s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    transform-origin: top bottom;
+    transform-style: preserve-3d;
+ }
+
+@keyframes haptic-bottom {
+    0% {
+        transform: perspective(400px) rotateX(0deg);
+    }
+    10%{
+        transform: perspective(400px) rotateX(-10deg);
+    }
+    0% {
+        transform: perspective(400px) rotateX(0deg);
+    }
+}
+
+
+
+
+.slow {
+    animation-duration: 0.7s;
+} 
+.slower {
+    animation-duration: 1s;
+}
+.slowest {
+    animation-duration: 2s;
+}
