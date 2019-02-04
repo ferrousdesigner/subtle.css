@@ -9,13 +9,15 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="lib/subtle.css" />
+    <link rel="icon" href="subtle_fav.png" type="image/png" sizes="16x16">
+
     <script src="main.js"></script>
 </head>
 <body>
     <div class="hero-full">
     <div class="hero">
         <div>
-            <h1 class="hero-title slower" appear-in>Subtle.css</h1>
+            <h1 class="hero-title slower" appear-in><span class="subtle-logo"></span>Subtle.css</h1>
             <h3 class="hero-desc">A Lightweight CSS Animation Library</h3>
             <br>
             <div class="flex flex-center"><button onclick="scroller('about')" class="btn-primary">Learn More</button>
@@ -160,11 +162,15 @@
             </div>
         </div>
         <div id='about'>
-            <h1>About</h1>
-            <p class="desc">Subtle.css is a lightweight css library created to provide a range of subtle & smooth animations in which the timing function is based upon a quintic bezier-curve.</p>
+            <div class="about-lib">
+                <h1>About</h1>
+                <p class="desc">Subtle.css is a lightweight css library created to provide a range of subtle & smooth animations in which the timing function is based upon a quintic bezier-curve.</p>
+                <br>
+            </div>
             <br>
-            <h2>Author</h2>
-            <div class="card">
+            <br>
+            <h1>Author</h1>
+            <div class="card corner-logo">
                 <div class="avatar"></div>
                 <div class="name">Faraz Khan</div>
                 <div class="small-line"></div>
@@ -177,7 +183,7 @@
                     <span class="fab fa-html5"></span>
 
                 </div>
-                <button class="btn-primary cta">Say Hi</button>
+                <a href="mailto:ferrousdesigner@gmail.com?Subject=Greetings" target="_top" class="btn-primary cta">Say Hi</a>
             </div>
         </div>
     </div>
