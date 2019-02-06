@@ -44,5 +44,6 @@ function changeDuration (e, speed) {
 
 function scroller (id) {
     console.log(id)
-    document.getElementById(id).scrollIntoView({behavior: 'smooth'})
+    let offset = document.getElementById(id).offsetTop
+    window.scrollTo({top: offset, behavior: 'smooth'})
  }

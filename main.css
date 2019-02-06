@@ -63,7 +63,7 @@ p {
     align-items: center;
     padding-left: 10px;
     border: 3px solid;
-    border-radius: 10px 0 0 10px;
+    border-radius: 5px 0 0 5px;
     border-right: none;
     font-size: 1.2rem;
     position: relative;
@@ -77,7 +77,7 @@ p {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0px 5px 5px 0px;
     border-right: none;
     border: 3px solid #333333;
     text-align: center;
@@ -141,7 +141,7 @@ p {
     font-size: 24px;
     font-weight: 400;
     text-align: center;
-    margin-top: -10px;
+    margin-top: -50px;
 }
 .btn-primary, .btn-accent {
     display: inline-flex;
@@ -429,12 +429,12 @@ p {
     margin: 0 auto;
 }
 #about {
-    padding: 5rem 0;
+    padding: 2rem 0;
     text-align: center;
 }
 #about .about-lib {
     display: inline-block;
-    padding: 2rem 4rem;
+    padding: 5rem 4rem;
     box-shadow: 0 1px 2px rgba(0,0,0,0.2);
     background: #333333;
     color: #fff;
@@ -497,6 +497,17 @@ p {
 
 
 @media only screen and (max-width: 850px) {
+    .hero-title {
+        flex-direction: column;
+    }
+    .hero-title .subtle-logo {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .hero-desc {
+        font-size: 16px;
+        margin-top: -30px;
+    }
     .displayer > div {
         width: 100%;
         margin-right: 0;
@@ -518,5 +529,16 @@ p {
         justify-content: center;
         margin-bottom: 40px;
 
+    }
+    .card {
+        width: 95%;
+        margin: 0 auto;
+    }
+    #about .about-lib {
+        padding: 3rem 2rem;
+    }
+    .single > span > p {
+        top: 34px;
+        font-size: 1.3rem;
     }
 }
